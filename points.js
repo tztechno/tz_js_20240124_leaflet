@@ -1,11 +1,7 @@
 var eq_points= {
 
 {"type":"FeatureCollection",
-  "metadata":{"generated":1706094586000,
-              "url":"https://earthquake.usgs.gov/fdsnws/event/1/query.geojson?starttime=2023-12-25%2000:00:00&endtime=2024-01-24%2023:59:59&maxlatitude=37.764&minlatitude=36.37&maxlongitude=137.955&minlongitude=136&minmagnitude=4.5&orderby=time",
-              "title":"USGS Earthquakes",
-              "status":200,"api":"1.14.0","count":46},
-              "features":[
+ "features":[
                 
 {"type":"Feature","properties":{"mag":4.5,"place":"30 km ENE of Anamizu, Japan","time":1705601079336,"updated":1705603308040,"tz":null,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000m4hy","detail":"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000m4hy&format=geojson","felt":null,"cdi":null,"mmi":null,"alert":null,"status":"reviewed","tsunami":0,"sig":312,"net":"us","code":"6000m4hy","ids":",us6000m4hy,","sources":",us,","types":",origin,phase-data,","nst":58,"dmin":1.088,"rms":0.98,"gap":83,"magType":"mb","type":"earthquake","title":"M 4.5 - 30 km ENE of Anamizu, Japan"},"geometry":{"type":"Point","coordinates":[137.2259,37.3223,10]},"id":"us6000m4hy"},
 {"type":"Feature","properties":{"mag":5,"place":"16 km WSW of Anamizu, Japan","time":1705398136207,"updated":1705747096312,"tz":null,"url":"https://earthquake.usgs.gov/earthquakes/eventpage/us6000m3wx","detail":"https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=us6000m3wx&format=geojson","felt":1,"cdi":7.2,"mmi":null,"alert":null,"status":"reviewed","tsunami":0,"sig":385,"net":"us","code":"6000m3wx","ids":",us6000m3wx,","sources":",us,","types":",dyfi,moment-tensor,origin,phase-data,","nst":44,"dmin":1.352,"rms":1.02,"gap":63,"magType":"mb","type":"earthquake","title":"M 5.0 - 16 km WSW of Anamizu, Japan"},"geometry":{"type":"Point","coordinates":[136.7256,37.1962,10]},"id":"us6000m3wx"},
