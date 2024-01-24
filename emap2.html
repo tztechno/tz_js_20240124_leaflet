@@ -24,9 +24,10 @@
   integrity="sha384-N2S8y7hRzXUPiepaSiUvBH1ZZ7Tc/ZfchhbPdvOE5v3aBBCIepq9l+dBJPFdo1ZJ" crossorigin="anonymous"></script>
  
  <!-- External data  --> 
+ ///////////////////////////////////////////
  <script src="points.js"></script>
- 
-	<!-- styles for elements html and body: fullscreen  -->
+ ///////////////////////////////////////////
+<!-- styles for elements html and body: fullscreen  -->
  <style>
   html, body {
  	 width: 100%;
@@ -95,7 +96,8 @@
    pointToLayer: function (feature, latlng) {
    return L.circleMarker(latlng, orangeMarker);
   }}).addTo(mymap);
-  
+
+	 
   // Overlay dictonary
   var overlays = {
    "Earthquakes": overlay_eq_points
