@@ -1,0 +1,43 @@
+
+//type: GeoJSONデータの種類を示す。この場合、"FeatureCollection"。
+//name: データセットの名前。
+//crs: 空間参照系（Coordinate Reference System）の情報。
+//features: 個々の地震イベントを含むFeatureのリスト。
+//各Featureは、地震のプロパティと地理座標情報を持つ。
+//properties: 地震のプロパティ情報。
+//geometry: 地理座標情報（緯度経度）。
+
+
+var eq_points = {
+  "type": "FeatureCollection",
+  "name": "eqarthquakes_ger",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 1,
+        "EV_DATE": 8130000,
+        "EV_TIME": 0.0,
+        "LAT": 50.8,
+        "LON": 6.1,
+        "DEPTH": null,
+        "DEP_COMM": null,
+        "MAG": null,
+        "MAG_TYPE": null,
+        "INTENSITY": 4.0,
+        "INT_SCALE": "MSK",
+        "ISO_DATE": null,
+        "ISO_TIME": "00:00:00.000",
+        "PT_SIZE": 2.888,
+        "EV_TYPE": "ke",
+        "EXPL_DE": "tektonisch",
+        "EXPL_EN": "known earthquake",
+        "SOURCE": "LEY11",
+        "EV_ID": 1
+      },
+      "geometry": { "type": "Point", "coordinates": [6.1, 50.8] }
+    },
+    // ... (他の地震データのFeature要素が続く)
+  ]
+};
