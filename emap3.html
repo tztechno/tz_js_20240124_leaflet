@@ -81,16 +81,16 @@ var overlay_eq_points = L.geoJSON(eq_points, {
 
 	 
 // Add earthquake markers
-/*
+
 var orangeMarker = {
     radius: 10,
-    fillColor: "black",
-    color: "black",
+    fillColor: "orange",
+    color: "orange",
     weight: 0.4,
     opacity: 0.4,
     fillOpacity: 0.4
 };
-*/
+
   // Updated popUpFunction for the new data format
   function popUpFunctionNew(feature, layer) {
    var popupContent = "<b>Date: </b>"+ new Date(feature.properties.time).toLocaleString() +
