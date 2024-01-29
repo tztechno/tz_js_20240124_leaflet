@@ -16,4 +16,4 @@ https://tztechno.github.io/tz_js_20240124_leaflet/emap4.html (mag6.0, past one m
 
 https://tztechno.github.io/tz_js_20240124_leaflet/mmap5.html (challenge moon map,xxx)
 
-https://tztechno.github.io/tz_js_20240124_leaflet/planets.html 
+https://tztechno.github.io/tz_js_20240124_leaflet/planets/planets.html 
