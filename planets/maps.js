@@ -10,5 +10,5 @@ var baselayer = new L.tileLayer('https://cartocdn-gusc.global.ssl.fastly.net/opm
 
 /////////////////////////////////////////
 
-var marker = L.marker([13.3160, 25.2510]).addTo(moonMap); // マーカーの座標を設定
-marker.bindPopup("SLIM").openPopup(); // マーカーにポップアップを追加
+var marker = L.marker([13.3160, 25.2510]).addTo(moonMap);
+marker.bindPopup("SLIM").openPopup(); 
