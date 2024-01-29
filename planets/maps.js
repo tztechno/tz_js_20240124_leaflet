@@ -8,5 +8,7 @@ var baselayer = new L.tileLayer('https://cartocdn-gusc.global.ssl.fastly.net/opm
     .addTo(moonMap)
     .setZIndex(0);
 
+/////////////////////////////////////////
+
 var marker = L.marker([13.3160, 25.2510]).addTo(moonMap); // マーカーの座標を設定
 marker.bindPopup("SLIM JAPAN").openPopup(); // マーカーにポップアップを追加
