@@ -39,6 +39,7 @@
  </style>	
 
 </head>
+	
 <body>
  <!-- set the div element containing the map -->
  <div id="mapid" style="width: 100%; height: 100%; padding: 0; margin: 0;"></div>
@@ -57,17 +58,7 @@ var baselayer = new L.tileLayer('https://cartocdn-gusc.global.ssl.fastly.net/opm
     .addTo(moonMap)
     .setZIndex(0);
 	 
-const mymap = L.map("map", {
-  center: [0, 0],
-  zoom: 2,
-  layers: L.tileLayer(
-    "https://services.arcgisonline.com/arcgis/rest/services/Moon_Visible/MapServer/tile/{z}/{y}/{x}",
-    {
-      attribution: "Tiles &copy; Esri, DigitalGlobe, USGS, Landsat/Copernicus",
-      maxZoom: 18,
-    }
-  ),
-});
+
 
 	 
 //////////////////////////////////////////////////
@@ -82,7 +73,7 @@ var overlay_eq_points = L.geoJSON(eq_points, {
     pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, orangeMarker);
     }
-}).addTo(mymap);
+}).addTo(moonMap);
 
 	 
 // Add earthquake markers
@@ -113,13 +104,13 @@ var overlays = {
 };
 
 // Layer control
-var legend = L.control.layers(basemaps, overlays, { collapsed: false }).addTo(mymap);
+var legend = L.control.layers(basemaps, overlays, { collapsed: false }).addTo(moonMap);
 
 // Scale
-var scale = L.control.scale({ maxWidth: 150, metric: true, imperial: true }).addTo(mymap);
+var scale = L.control.scale({ maxWidth: 150, metric: true, imperial: true }).addTo(moonMap);
 
 // Leaflet-Ruler measure tool
-var ruler = L.control.ruler().addTo(mymap);
+var ruler = L.control.ruler().addTo(moonMap);
 
 
 	 
