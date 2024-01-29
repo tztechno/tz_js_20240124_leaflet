@@ -26,20 +26,9 @@
 <script>
 //////////
 
-    // Define orangeMarker before using it
-    var orangeMarker = {
-        radius: 10,
-        color: "red",
-        weight: 1,
-    };
-
-    var eq_points= {};
-  
-    var overlay_eq_points = L.geoJSON(eq_points, {
-        pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng, orangeMarker);
-        }
-    }).addTo(moonMap);
+    var marker = L.marker([13.3160, 25.2510]).addTo(map); // マーカーの座標を設定
+    marker.bindPopup("SLIM JAPAN").openPopup(); // マーカーにポップアップを追加
+ 
     
 /////////////////
 </script>
