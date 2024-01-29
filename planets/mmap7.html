@@ -18,40 +18,44 @@
     </style>  
 
     <!-- Our script, uses Leaflet to draw the maps and map components for this page //// async defer -->
+
     
     <script async defer>
+        
         let moonMap = L.map('moon-map')
         moonMap.setView([13.3160, 25.2510], 6)
         
         var baselayer = new L.tileLayer('https://cartocdn-gusc.global.ssl.fastly.net/opmbuilder/api/v1/map/named/opm-moon-basemap-v0-1/all/{z}/{x}/{y}.png')
             .addTo(moonMap)
             .setZIndex(0);
-    </script>
-    
-    <script>
+
         // Define orangeMarker before using it
         var orangeMarker = {
             radius: 10,
             color: "red",
             weight: 1,
         };
-    
+
+        
+    /*
         var eq_points = {
             "type": "FeatureCollection",
             "features": [
-                { "type": "Feature", "geometry": { "type": "Point", "coordinates": [25.2510, 13.3160] }}
+                { "type": "Feature", "geometry": { "type": "Point", "coordinates": [13.3160, 25.2510] }}
             ],
         }
-        
-        console.log(eq_points)
         
         var overlay_eq_points = L.geoJSON(eq_points, {
             pointToLayer: function (feature, latlng) {
                 return L.circleMarker(latlng, orangeMarker);
             }
-        }).addTo(moonMap);   
+        }).addTo(moonMap); 
+    */
+
+        
     </script>
 
+    
 </head>
     
 <body>
