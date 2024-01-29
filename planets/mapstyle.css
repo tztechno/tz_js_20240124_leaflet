@@ -1,6 +1,5 @@
 #moon-map {
     width: 1600px;
     height: 800px;
-    border: 0;
-
+    border: 1px gray solid;
 }
