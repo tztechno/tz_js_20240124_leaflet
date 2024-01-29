@@ -20,6 +20,30 @@
     <!-- Our script, uses Leaflet to draw the maps and map components for this page //// async defer -->
 
     <script async defer src="maps.js"></script>
+
+    
+        <style>
+            var eq_points = {
+            "type": "FeatureCollection",
+            "features": [
+                { "type": "Feature", "geometry": { "type": "Point", "coordinates": [13.3160, 25.2510, 0] }}
+            ],
+        }
+        var overlay_eq_points = L.geoJSON(eq_points, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, orangeMarker);
+            }
+        }).addTo(moonMap);
+        
+        
+        var orangeMarker = {
+            radius: 10,
+            color: "red",
+            weight: 1,
+        };
+        </style>
+
+
     
 </head>
     
