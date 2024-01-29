@@ -44,9 +44,33 @@
 
 
  <script>
+	 
+// Leafletライブラリを読み込みます。
+//const L = require("leaflet");
 
+// 月の地図データを提供するTileProviderを作成します。
+const provider = new L.tileLayer(
+  "https://services.arcgisonline.com/arcgis/rest/services/Moon_Visible/MapServer/tile/{z}/{y}/{x}",
+  {
+    attribution: "Tiles &copy; Esri, DigitalGlobe, USGS, Landsat/Copernicus",
+    maxZoom: 18,
+  }
+);
+
+// Leafletマップを作成し、TileProviderを設定します。
+const mymap = new L.Map("map", {
+  center: [0, 0],
+  zoom: 2,
+  layers: [provider],
+});
+
+
+//////////////////////////////////////////////////
+
+
+	 
 // Create Leaflet map
-var mymap = L.map('mapid').setView([0,60],1); //緯度,経度
+//var mymap = L.map('mapid').setView([0,60],1); //緯度,経度
 
 // Add basemaps
 // basemap 1:
