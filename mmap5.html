@@ -86,19 +86,28 @@ const mymap = L.map("map", {
 
 // Add basemaps
 // basemap 1:
-var osm_basemap = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/Moon_Visible/MapServer/tile/{z}/{x}/{y}.png').addTo(mymap);
+var osm_basemap = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/Moon_Visible/MapServer/tile/{z}/{x}/{y}.png',{
+      attribution: "Tiles &copy; Esri, DigitalGlobe, USGS, Landsat/Copernicus",
+      maxZoom: 18,
+    }).addTo(mymap);
 
 // basemap 2:
-var otm_basemap = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/Moon_Visible/MapServer/tile/{z}/{x}/{y}.png');
+var otm_basemap = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/Moon_Visible/MapServer/tile/{z}/{x}/{y}.png',{
+      attribution: "Tiles &copy; Esri, DigitalGlobe, USGS, Landsat/Copernicus",
+      maxZoom: 18,
+    });
 
 // basemap 3:
-var osmint_basemap = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/Moon_Visible/MapServer/tile/{z}/{x}/{y}.png',{maxZoom: 19});
+var osmint_basemap = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/Moon_Visible/MapServer/tile/{z}/{x}/{y}.png',{
+      attribution: "Tiles &copy; Esri, DigitalGlobe, USGS, Landsat/Copernicus",
+      maxZoom: 18,
+    });
 
 // Basemap dictionary
   var basemaps = {
-   "Open Street Map DE": osm_basemap,
-   "Open Topo Map": otm_basemap,
-   "Open Street Map INT": osmint_basemap
+   "Moon Map DE": osm_basemap,
+   "Moon Topo Map": otm_basemap,
+   "Moon Map INT": osmint_basemap
   };
 	 
 	 	 
