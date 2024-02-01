@@ -12,7 +12,7 @@ https://tztechno.github.io/tz_js_20240124_leaflet/emap2.html
 
 https://tztechno.github.io/tz_js_20240124_leaflet/emap3.html (mag4.5, past one week, 2024-01-28)
 
-https://tztechno.github.io/tz_js_20240124_leaflet/emap4.html (mag6.0, past one month, 2024-01-29)
+https://tztechno.github.io/tz_js_20240124_leaflet/emap4.html (mag6.0, past one month, 2024-01-29) color by magnitude
 
 https://tztechno.github.io/tz_js_20240124_leaflet/planets/planets_org.html 
 
