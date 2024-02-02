@@ -21,3 +21,5 @@ https://tztechno.github.io/tz_js_20240124_leaflet/planets/planets_org.html
 https://tztechno.github.io/tz_js_20240124_leaflet/planets/mmap7.html (slim on the moon, 2024-01)
 
 https://tztechno.github.io/tz_js_20240124_leaflet/planets/python_moon_map.html (kaggle.com/stpeteishii/location-map-of-slim)
+
+https://tztechno.github.io/tz_js_20240124_leaflet/tz_JAP.html 
