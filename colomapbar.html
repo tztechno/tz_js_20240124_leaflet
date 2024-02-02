@@ -1,0 +1,52 @@
+
+It looks like your code is designed to calculate a marker color based on a magnitude value and update the background color of the body element accordingly. If you want to display a colormap bar to visually represent the range of colors corresponding to different magnitudes, you can add an HTML element for the colormap bar and update its styling based on the color range.
+
+Here's an example of how you could modify your code to include a colormap bar:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colormap Bar Example</title>
+    <style>
+        #colormapBar {
+            width: 300px;
+            height: 20px;
+            background: linear-gradient(to right, #ffff00 0%, #ff0000 100%);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Colormap Bar -->
+    <div id="colormapBar"></div>
+
+    <!-- Magnitude Input -->
+    <label for="magnitudeInput">Magnitude:</label>
+    <input type="number" id="magnitudeInput" step="0.1" value="0" oninput="updateMarkerColor()">
+
+    <script>
+        // Your existing JavaScript code here
+
+        function updateMarkerColor() {
+            var magnitudeInput = document.getElementById("magnitudeInput");
+            var magnitude = parseFloat(magnitudeInput.value) || 0;
+            var markerColor = getMarkerColor(magnitude);
+            // Update body background color
+            document.body.style.backgroundColor = markerColor;
+
+            // Update colormap bar color
+            var colormapBar = document.getElementById("colormapBar");
+            colormapBar.style.background = getColormapGradient();
+        }
+
+        function getColormapGradient() {
+            // Modify this function to generate the appropriate gradient based on your colormap logic
+            return 'linear-gradient(to right, #ffff00 0%, #ff0000 100%)';
+        }
+    </script>
+</body>
+</html>
