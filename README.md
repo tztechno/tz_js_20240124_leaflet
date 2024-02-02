@@ -23,3 +23,7 @@ https://tztechno.github.io/tz_js_20240124_leaflet/planets/mmap7.html (slim on th
 https://tztechno.github.io/tz_js_20240124_leaflet/planets/python_moon_map.html (kaggle.com/stpeteishii/location-map-of-slim)
 
 https://tztechno.github.io/tz_js_20240124_leaflet/tz_JAP.html 
+
+https://tztechno.github.io/tz_js_20240124_leaflet/mag_color.html 
+
+https://tztechno.github.io/tz_js_20240124_leaflet/mag_color2.html 
