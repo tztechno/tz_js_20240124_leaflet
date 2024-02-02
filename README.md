@@ -27,3 +27,5 @@ https://tztechno.github.io/tz_js_20240124_leaflet/tz_JAP.html
 https://tztechno.github.io/tz_js_20240124_leaflet/mag_color.html 
 
 https://tztechno.github.io/tz_js_20240124_leaflet/mag_color2.html 
+
+https://tztechno.github.io/tz_js_20240124_leaflet/colormapbar.html 
