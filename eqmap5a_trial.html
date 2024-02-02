@@ -40,8 +40,8 @@
 <body>
  <!-- set the div element containing the map -->
  <div id="mapid" style="width: 100%; height: 100%; padding: 0; margin: 0;"></div>
-
-
+<div id="colormapBar"></div>
+	
  <script>
 
 // Create Leaflet map
@@ -125,6 +125,12 @@ function updateMarkerColor() {
     var markerColor = getMarkerColor(magnitude);
     // Update body background color
     document.body.style.backgroundColor = markerColor;
+
+    // Update colormap bar color
+    var colormapBar = document.getElementById("colormapBar");
+    colormapBar.style.background = getColormapGradient();
+
+	
 }
 
 
@@ -146,6 +152,8 @@ var overlay_eq_points = L.geoJSON(eq_points, {
             opacity: 1,
             fillOpacity: 0.2
         });
+
+	    
     }
 }).addTo(mymap);
 
