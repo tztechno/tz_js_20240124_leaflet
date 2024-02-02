@@ -165,11 +165,11 @@ var overlay_eq_points = L.geoJSON(eq_points, {
     }
 }).addTo(mymap);
 
-var colormapBar = L.control({ position: 'topright' });
+var colormapBar = L.control({ position: 'topleft' });
 
 colormapBar.onAdd = function () {
     var div = L.DomUtil.create('div', 'info legend');
-    div.innerHTML = "<div id='colormapBar' style='width: 20px; height: 200px; background: linear-gradient(to bottom, red, yellow, green);'></div>";
+    div.innerHTML = "<div id='colormapBar' style='width: 200px; height: 20px; background: linear-gradient(to right, yellow, red );'></div>";
     return div;
 };
 
