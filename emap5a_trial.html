@@ -161,13 +161,19 @@ var overlay_eq_points = L.geoJSON(eq_points, {
             weight: 1,
             opacity: 1,
             fillOpacity: 0.2
-        });
-
-	    
+        }); 
     }
 }).addTo(mymap);
 
+var colormapBar = L.control({ position: 'topright' });
 
+colormapBar.onAdd = function () {
+    var div = L.DomUtil.create('div', 'info legend');
+    div.innerHTML = "<div id='colormapBar' style='width: 20px; height: 200px; background: linear-gradient(to bottom, red, yellow, green);'></div>";
+    return div;
+};
+
+colormapBar.addTo(mymap);
 //////////////////////////////////////////////////////////
 
 
