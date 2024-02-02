@@ -165,7 +165,7 @@ var overlay_eq_points = L.geoJSON(eq_points, {
     }
 }).addTo(mymap);
 
-var colormapBar = L.control({ position: 'topleft' });
+var colormapBar = L.control({ position: 'topcenter' });
 
 colormapBar.onAdd = function () {
     var div = L.DomUtil.create('div', 'info legend');
