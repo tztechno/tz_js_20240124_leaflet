@@ -30,4 +30,4 @@ https://tztechno.github.io/tz_js_20240124_leaflet/mag_color2.html
 
 https://tztechno.github.io/tz_js_20240124_leaflet/colormapbar.html 
 
-https://tztechno.github.io/tz_js_20240124_leaflet/emap5a_trial.html
+https://tztechno.github.io/tz_js_20240124_leaflet/emap5a_trial.html (deleted)
