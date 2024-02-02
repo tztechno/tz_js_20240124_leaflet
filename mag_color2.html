@@ -65,9 +65,16 @@
             var markerColor = getMarkerColor(magnitude);
             // Update body background color
             document.body.style.backgroundColor = markerColor;
+
+            // Update colormap bar color
+            var colormapBar = document.getElementById("colormapBar");
+            colormapBar.style.background = getColormapGradient();
         }
 
-
+        function getColormapGradient() {
+            // Modify this function to generate the appropriate gradient based on your colormap logic
+            return 'linear-gradient(to right, #ffff00 0%, #ff0000 100%)';
+        }
 
     </script>
 </head>
