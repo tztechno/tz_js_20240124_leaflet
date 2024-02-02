@@ -74,58 +74,58 @@ var osmint_basemap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}
 //////////////////////////////////////////////////////////
 	 
 
-        function getMarkerColor(magnitude) {
-            // Normalize magnitude to be in the range [0, 1]
-            var normalizedMagnitude;
+function getMarkerColor(magnitude) {
+    // Normalize magnitude to be in the range [0, 1]
+    var normalizedMagnitude;
 
-            if (magnitude <= 5) {
-                normalizedMagnitude = 0;
-            } else if (magnitude >= 8) {
-                normalizedMagnitude = 1;
-            } else {
-                normalizedMagnitude = (magnitude - 5) / 3;
-            }
+    if (magnitude <= 5) {
+	normalizedMagnitude = 0;
+    } else if (magnitude >= 8) {
+	normalizedMagnitude = 1;
+    } else {
+	normalizedMagnitude = (magnitude - 5) / 3;
+    }
 
-            // Interpolate color based on the normalized magnitude
-            var interpolatedColor = interpolateColor(normalizedMagnitude, { r: 255, g: 255, b: 0 }, { r: 255, g: 0, b: 0 });
+    // Interpolate color based on the normalized magnitude
+    var interpolatedColor = interpolateColor(normalizedMagnitude, { r: 255, g: 255, b: 0 }, { r: 255, g: 0, b: 0 });
 
-            return rgbToHex(interpolatedColor.r, interpolatedColor.g, interpolatedColor.b);
-        }
+    return rgbToHex(interpolatedColor.r, interpolatedColor.g, interpolatedColor.b);
+}
 
-        // Function to interpolate color between two colors
-        function interpolateColor(factor, color1, color2) {
-            var r = Math.round(color1.r + factor * (color2.r - color1.r));
-            var g = Math.round(color1.g + factor * (color2.g - color1.g));
-            var b = Math.round(color1.b + factor * (color2.b - color1.b));
+// Function to interpolate color between two colors
+function interpolateColor(factor, color1, color2) {
+    var r = Math.round(color1.r + factor * (color2.r - color1.r));
+    var g = Math.round(color1.g + factor * (color2.g - color1.g));
+    var b = Math.round(color1.b + factor * (color2.b - color1.b));
 
-            return { r: r, g: g, b: b };
-        }
+    return { r: r, g: g, b: b };
+}
 
-        // Function to convert hex color to RGB
-        function hexToRgb(hex) {
-            var bigint = parseInt(hex.slice(1), 16);
-            var r = (bigint >> 16) & 255;
-            var g = (bigint >> 8) & 255;
-            var b = bigint & 255;
-            return {
-                r: r,
-                g: g,
-                b: b
-            };
-        }
+// Function to convert hex color to RGB
+function hexToRgb(hex) {
+    var bigint = parseInt(hex.slice(1), 16);
+    var r = (bigint >> 16) & 255;
+    var g = (bigint >> 8) & 255;
+    var b = bigint & 255;
+    return {
+	r: r,
+	g: g,
+	b: b
+    };
+}
 
-        // Function to convert RGB to hex color
-        function rgbToHex(r, g, b) {
-            return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-        }
+// Function to convert RGB to hex color
+function rgbToHex(r, g, b) {
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
 
-        function updateMarkerColor() {
-            var magnitudeInput = document.getElementById("magnitudeInput");
-            var magnitude = parseFloat(magnitudeInput.value) || 0;
-            var markerColor = getMarkerColor(magnitude);
-            // Update body background color
-            document.body.style.backgroundColor = markerColor;
-        }
+function updateMarkerColor() {
+    var magnitudeInput = document.getElementById("magnitudeInput");
+    var magnitude = parseFloat(magnitudeInput.value) || 0;
+    var markerColor = getMarkerColor(magnitude);
+    // Update body background color
+    document.body.style.backgroundColor = markerColor;
+}
 
 
 //////////////////////////////////////////////////////////
