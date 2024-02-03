@@ -18,7 +18,7 @@ https://tztechno.github.io/tz_js_20240124_leaflet/emap5.html (mag4.5 past one mo
 
 https://tztechno.github.io/tz_js_20240124_leaflet/emap5a.html (with colorBar)
 
-https://tztechno.github.io/tz_js_20240124_leaflet/emap8a.html (mag4.5 past one year, 2024-02-03) japan
+https://tztechno.github.io/tz_js_20240124_leaflet/emap8.html (mag4.5 past one year, 2024-02-03) japan
 
 https://tztechno.github.io/tz_js_20240124_leaflet/planets/org_planets.html 
 
