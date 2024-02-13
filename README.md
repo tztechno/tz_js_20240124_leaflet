@@ -20,6 +20,8 @@ https://tztechno.github.io/tz_js_20240124_leaflet/emap5a.html (with colorBar)
 
 https://tztechno.github.io/tz_js_20240124_leaflet/emap8.html (mag4.5 past one year, 2024-02-03) japan
 
+https://tztechno.github.io/tz_js_20240124_leaflet/emap9.html (mag4.5 past one month, 2024-02-13) japan
+
 https://tztechno.github.io/tz_js_20240124_leaflet/planets/org_planets.html 
 
 https://tztechno.github.io/tz_js_20240124_leaflet/planets/mmap7.html (slim on the moon, 2024-01)
