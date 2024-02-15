@@ -1,1 +1,1 @@
-var eq_points= './new.json'
+var eq_points= './now.json'
